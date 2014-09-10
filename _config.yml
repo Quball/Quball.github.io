@@ -1,0 +1,11 @@
+
+name : Thomas S. Nielsen
+description : Website for Quball
+
+url : "http://localhost:4000"
+
+paginate : 10
+
+markdown : rdiscount
+permalink : pretty
+highlighter : pygments
