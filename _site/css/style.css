@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0; }
 
+h2, h3, h4 {
+  color: #304864; }
+
 /* Mixins */
 /* Navbar */
 header {
@@ -41,18 +44,29 @@ header {
     text-align: center;
     width: 33.33333%;
     cursor: pointer;
+    color: #fff;
     -webkit-transition: background-color 0.5s ease-in;
     -moz-transition: background-color 0.5s ease-in;
     -o-transition: background-color 0.5s ease-in;
     transition: background-color 0.5s ease-in; }
     header ul li:hover {
-      background-color: #fff; }
-      header ul li:hover a {
-        color: black;
-        text-decoration: none; }
-    header ul li a {
-      color: #fff;
-      text-transform: uppercase; }
+      background-color: #353535; }
+    header ul li.active {
+      background-color: #EDE9FA;
+      color: #304864; }
+  header .info-field {
+    height: 0px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #EDE9FA;
+    -webkit-transition: height 0.5s ease-in;
+    -moz-transition: height 0.5s ease-in;
+    -o-transition: height 0.5s ease-in;
+    transition: height 0.5s ease-in; }
+    header .info-field p {
+      margin-top: 12px; }
+    header .info-field.open {
+      height: 40px; }
   @media (min-width: 768px) {
     header h3 {
       border-bottom: none;
@@ -81,3 +95,17 @@ aside {
   @media (min-width: 768px) {
     aside {
       margin-top: 30px; } }
+
+/* Footer */
+footer {
+  padding: 15px 0;
+  margin-top: 20px;
+  background-color: #768AAD; }
+  footer .ex {
+    margin-top: 10px; }
+  footer .ex-wrap {
+    margin-top: 15px;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #5a6b89; }
