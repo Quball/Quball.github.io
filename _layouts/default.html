@@ -1,14 +1,16 @@
 {% include header.html %}
 
 <div class="row">
+
+	<aside class="col-xs-12 col-sm-4">
+		{% include aside.html %}
+		<hr />
+	</aside>
 	
-	<div class="col-xs-8">
+	<div class="col-xs-12 col-sm-6 col-sm-offset-1">
 		{{ content }}
 	</div>
 	
-	<div class="col-xs-4">
-		{% include aside.html %}
-	</div>	
 </div>
 
 

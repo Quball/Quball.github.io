@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was built using Jekyll. Read more at http://jekyllrb.com/ -->
+<!-- With the help of Twitter Bootstrap's grids, and SASS -->
 <!-- Developed by Thomas S. Nielsen, vist me at no.linkedin.com/pub/thomas-s-nielsen/90/987/524/ -->
 <html lang="en">
 <head>
@@ -11,7 +12,7 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="" />
 	<meta name="author" content="">
-	<meta name="viewport" content="width=device-width; initial-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<!-- CSS -->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
@@ -19,17 +20,15 @@
 
 <body>
 
-	<header class="container">
-		<nav class="row" role="nav">
-			<div class="col-xs-12">
-				<div class="row">
-					<h3 class="col-xs-4">{{ site.name }}</h3>
-					<ul class="col-xs-8">
-						<li><a href="/">Home</a></li>
-						<li><a href="/about">About</a></li>
-						<li><a href="/contact">Contact</a></li>
-					</ul>
-				</div>
+	<header>
+		<nav class="container" role="nav">
+			<div class="row">
+				<h3 class="padding-box col-xs-12 col-sm-4">{{ site.name }}</h3>
+				<ul class="padding-box col-xs-12 col-sm-8">
+					<li><a href="/">Home</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/contact">Contact</a></li>
+				</ul>
 			</div>
 		</nav>
 	</header>
