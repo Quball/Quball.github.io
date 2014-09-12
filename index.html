@@ -3,14 +3,12 @@ layout: default
 ---
 
 {% for post in site.posts limit: 5 %}
-	<hr />
 	<article class="row h-entry">
 		<div class="col-xs-12">
 			<h2 class="p-name"> {{ post.title }} </h2>
 			<em class="dt-published" datetime=" {{ post.date }} "> 
-				{{ post.date | date_to_long_string }} 
+				Published: {{ post.date | date_to_long_string }} 
 			</em>
-			<hr />
 			<div class="e-content">
 				{{ post.content }}
 			</div>
