@@ -40,6 +40,18 @@ hr { border-color: $white; }
         transition: $attr $dur ease-in;
 }
 
+@mixin columns($num, $gap, $ruleWidth, $ruleStyle, $ruleColor) {
+	 -webkit-column-count: $num;
+		-moz-column-count: $num;
+		     column-count: $num;
+	 -webkit-column-gap: $gap;
+		-moz-column-gap: $gap;
+			 column-gap: $gap;
+	-webkit-column-rule: $ruleWidth $ruleStyle $ruleColor;
+	   -moz-column-rule: $ruleWidth $ruleStyle $ruleColor;
+			column-rule: $ruleWidth $ruleStyle $ruleColor;
+}
+
 body {
 	background: $bodyBg;
 }
@@ -151,7 +163,6 @@ header {
 	.e-content h3, .e-content h4 {
 		padding: 8px 0;
 		color: $contentHeader;
-		text-decoration: underline;
 	}
 	
 	.e-content ul {
@@ -178,13 +189,19 @@ aside {
 	}
 	
 	p {
-		border-left: 4px solid $white;
+		border-left: 2px solid $white;
 		padding-left: 10px;
+		@include columns(1, 2em, 2px, solid, $white);
 	}
 	
 	@media (min-width: 768px) {
 		& {
 			margin-top: 30px;
+		}
+		
+		p {
+			border-left: 4px solid $white;
+			@include columns(2, 4em, 4px, solid, $white);
 		}
 	}
 }
