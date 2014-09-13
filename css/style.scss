@@ -12,7 +12,7 @@ $darkGrey: #304864;
 $defaultBlue : #5a6b89;
 $darkBlue: #1A3960;
 $linkColor: #680148;
-$contentHeader: #517478;
+$contentHeader: #785151;
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 .container { width: 100%; }
@@ -126,7 +126,7 @@ header {
 	height: 0;
 	bottom: 0;
 	left: 0;
-	background: $darkBlue;
+	background: #37424E;
 	z-index: 2;
 	margin-top: 20px;
 	overflow-x: scroll;
@@ -139,13 +139,17 @@ header {
 		height: auto;
 	}
 	
+	&.closed {
+		opacity: 0;
+	}
+	
 	.close-icon {
 		position: relative;
 		text-align: right;
 		cursor: pointer;
 		color: $white;
-		background: $darkBlue;
 		padding: 8px 14px;
+		font-size: 16px;
 	}
 	
 	p {
@@ -153,13 +157,13 @@ header {
 	}
 	
 	@media (min-width: 768px) {
-		background: $darkGrey;
 		overflow: auto;
 		
 		img {
 			display: block;
 		    margin-left: auto;
 		    margin-right: auto;
+		    @include blackBoxShadow(0px, 0px, 20px, 2px, .4);
 		}
 	}
 }

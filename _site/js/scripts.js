@@ -20,8 +20,6 @@ function imageViewer() {
 		var clickedSrc = clicked.attr('src');
 		var clickedAlt = clicked.attr('alt');
 		
-		console.log(clickedAlt, modalImg.attr('alt'));
-		
 		if(clickedAlt == modalImg.attr('alt')) {
 			closeModal();
 			return;
@@ -32,6 +30,7 @@ function imageViewer() {
 		modalImg.attr('alt', clickedAlt);
 		modal.addClass('active');
 		
+		//scroll to top of current image
 		view.animate({
 			scrollTop : modal.offset().top
 		}, 1000);
@@ -43,11 +42,9 @@ function imageViewer() {
 		modalImg.attr('alt', '');
 	}
 	
+	//move close icon right as width scrolling
 	modal.bind('scroll', function() {
-		console.log('doin it');
 		var offset = modal.scrollLeft();
-		console.log($(this).scrollLeft());
 		xIcon.css('margin-right', -offset+'px');
-		console.log(xIcon.css('margin-right'));
 	});
 }

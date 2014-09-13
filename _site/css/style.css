@@ -73,7 +73,7 @@ header {
   height: 0;
   bottom: 0;
   left: 0;
-  background: #1A3960;
+  background: #37424E;
   z-index: 2;
   margin-top: 20px;
   overflow-x: scroll;
@@ -85,23 +85,27 @@ header {
   .modal.active {
     opacity: 1;
     height: auto; }
+  .modal.closed {
+    opacity: 0; }
   .modal .close-icon {
     position: relative;
     text-align: right;
     cursor: pointer;
     color: #fff;
-    background: #1A3960;
-    padding: 8px 14px; }
+    padding: 8px 14px;
+    font-size: 16px; }
   .modal p {
     float: left; }
   @media (min-width: 768px) {
     .modal {
-      background: #304864;
       overflow: auto; }
       .modal img {
         display: block;
         margin-left: auto;
-        margin-right: auto; } }
+        margin-right: auto;
+        -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.4); } }
 
 /* Posts */
 .h-entry .p-name {
@@ -121,7 +125,7 @@ header {
     margin-bottom: 10px; }
   .h-entry .e-content h3, .h-entry .e-content h4 {
     padding: 8px 0;
-    color: #517478; }
+    color: #785151; }
   .h-entry .e-content ul {
     list-style: none; }
   .h-entry .e-content p {
