@@ -130,6 +130,7 @@ header {
 	margin-top: 20px;
 	overflow-x: scroll;
 	opacity: 0;
+	background: #37424E;
 
 	@include transition(opacity, .5s);
 	
@@ -149,7 +150,6 @@ header {
 		color: $white;
 		padding: 8px 14px;
 		font-size: 16px;
-		background: #37424E;
 	}
 	
 	p {
