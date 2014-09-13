@@ -68,6 +68,8 @@ header {
         color: #404040; }
       .info-section ul li:first-child {
         padding-top: 0; }
+      .info-section ul li:first-child:hover span {
+        color: none; }
       .info-section ul li a {
         color: #404040; }
       .info-section ul li p {
