@@ -1,15 +1,32 @@
-{% include header.html %}
-<div class="row">
-	<section class="col-xs-12 info-section">
-		{% include info.html %}
-	</section>
-	<aside class="col-xs-12 aside-section">
-		{% include aside.html %}
-	</aside>
-	
-	<div class="col-xs-12">
-		{{ content }}
+	{% include header.html %}
+	<div class="row">
+		<section class="col-xs-12 info-section">
+			{% include info.html %}
+		</section>
+		<aside class="col-xs-12 aside-section">
+			{% include aside.html %}
+		</aside>
 	</div>
-	
-</div>
+</main>
+
+<section class="code-section">
+	<div class="img-modal" id="img-modal">
+		<div class="header"><p class="col-xs-8 col-md-6 col-md-offset-3" id="img-desc"></p><h4 id="close-icon">X</h4></div>
+		<img class="hidden" data-id="js1" src="../img/js1.jpeg" alt="Javascript examaple 1">
+		<img class="hidden" data-id="js2" src="../img/js2.jpeg" alt="Javascript examaple 2">
+		<img class="hidden" data-id="ujs" src="../img/underscore.jpeg" alt="underscoreJS example">
+		<img class="hidden" data-id="css1" src="../img/css1.jpeg" alt="CSS example 1">
+		<img class="hidden" data-id="css2" src="../img/css2.jpeg" alt="CSS example 2">
+		<img class="hidden" data-id="html" src="../img/html1.jpeg" alt="HTML example">
+	</div>
+	{% include code-examples.html %}
+</section>
+
+<section class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			{{ content }}
+		</div>
+	</div>
+</section>
 {% include footer.html %}

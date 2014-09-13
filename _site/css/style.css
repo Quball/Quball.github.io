@@ -5,6 +5,10 @@
   margin: 0;
   padding: 0; }
 
+body {
+  background-color: rgba(252, 252, 252, 0.9);
+  color: #404040; }
+
 @media (min-width: 1200px) {
   .container {
     width: 600px; } }
@@ -85,6 +89,58 @@ header {
     font-weight: 500; }
   .aside-section h4, .h-entry h4 {
     margin-top: 15px; }
+
+.img-modal {
+  height: 0;
+  overflow: hidden;
+  overflow-x: scroll;
+  background: #404040; }
+  .img-modal p {
+    color: #fff;
+    margin-top: 11px; }
+  .img-modal h4 {
+    text-align: right;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer; }
+  @media (min-width: 991px) {
+    .img-modal {
+      overflow-x: hidden;
+      text-align: center; } }
+
+.code-section {
+  background: #31ADA3;
+  margin-top: 40px;
+  width: 100%;
+  padding-bottom: 10px; }
+  .code-section h3 {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 22px;
+    border-bottom: 1px solid #fff;
+    font-weight: 500;
+    margin-bottom: 15px; }
+  .code-section .img-btn {
+    margin-bottom: 20px;
+    cursor: pointer; }
+    .code-section .img-btn p {
+      font-weight: 300;
+      border-radius: 3px;
+      padding: 5px 7px;
+      text-align: center;
+      color: #fff;
+      border: 1px solid #fff;
+      font-size: 11px; }
+      @media (min-width: 768px) {
+        .code-section .img-btn p {
+          font-size: 12px;
+          -webkit-transition: background-color 0.5s ease-in;
+          -moz-transition: background-color 0.5s ease-in;
+          -o-transition: background-color 0.5s ease-in;
+          transition: background-color 0.5s ease-in; }
+          .code-section .img-btn p:hover {
+            background-color: rgba(252, 252, 252, 0.9);
+            color: #404040; } }
 
 footer {
   margin-top: 40px;

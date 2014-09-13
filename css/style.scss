@@ -8,8 +8,10 @@
 
 $textColor: #404040;
 $mainGreen: #31ADA3;
+$bodyBg: rgba(252, 252, 252, .9);
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
+body { background-color: $bodyBg; color: $textColor; }
 
 .container {
 	@media (min-width: 1200px) {
@@ -21,6 +23,13 @@ $mainGreen: #31ADA3;
 	@media (min-width: 768px) {
 		width: 600px;
 	}
+}
+
+@mixin transition($attr, $dur) {
+-webkit-transition:$attr $dur ease-in;
+   -moz-transition:$attr $dur ease-in;
+     -o-transition:$attr $dur ease-in;
+        transition:$attr $dur ease-in;
 }
 
 //helper class for screenreaders in standalone icons
@@ -137,6 +146,75 @@ header  {
 	
 	p {
 		
+	}
+}
+
+.img-modal {
+	
+	height: 0;
+	overflow: hidden;
+	overflow-x: scroll;
+	background: $textColor;
+	
+	p {
+		color: #fff;
+		margin-top: 11px;
+	}
+	
+	h4 {
+		text-align: right;
+		color: #fff;
+		padding: 10px;
+		cursor: pointer; 
+	}
+	
+	@media (min-width: 991px) {
+		overflow-x: hidden;
+		text-align: center;
+	}
+}
+
+.code-section {
+	
+	background: $mainGreen;
+	margin-top: 40px;
+	width: 100%;
+	padding-bottom: 10px;
+	
+	h3 {
+		margin-top: 15px;
+		color: #fff;
+		font-size: 22px;
+		border-bottom: 1px solid #fff;
+		font-weight: 500;
+		margin-bottom: 15px;
+	}
+	
+	.img-btn {
+		
+		margin-bottom: 20px;
+		cursor: pointer;
+	
+		 p {
+		 	font-weight: 300;
+			border-radius: 3px;
+			padding: 5px 7px;
+			text-align: center;
+			color: #fff;
+			border: 1px solid #fff;
+			font-size: 11px;
+			
+			@media (min-width: 768px) {
+				font-size: 12px;
+				
+				@include transition(background-color, 0.5s);
+				
+				&:hover {
+					background-color: $bodyBg;
+					color: $textColor;
+				}
+			}	
+		}
 	}
 }
 

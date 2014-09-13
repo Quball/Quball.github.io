@@ -1,45 +1,57 @@
-$(window).on('load', function(){
+$(window).load(function(){
 	imageViewer();
 });
 
 function imageViewer() {
 	
-	var modal = $('#modal'),
-	modalImg = $('#modal img'),
+	var modal = $('#img-modal'),
+	modalImages = modal.children('img'),
 	view = $('html, body'),
-	close = $('#close-icon'),
-	title = $('#close-icon p'),
-	xIcon = $('#close-icon span'),
-	windowW = $(document).width();
+	codeSection =  $('.code-section'),
+	xIcon = $('#close-icon'),
+	imgDesc = $('#img-desc'),
+	siblingImg;
 	
-	$('#close-icon').on('click', closeModal);
+	xIcon.on('click', closeModal);
 	
-	$('footer img.footerImg').on('click', function(e){
-		e.preventDefault;
-		var clicked = $(this);
-		var clickedSrc = clicked.attr('src');
-		var clickedAlt = clicked.attr('alt');
+	codeSection.on('click', '.img-btn', function(e){
 		
-		if(clickedAlt == modalImg.attr('alt')) {
-			closeModal();
+		var clicked = $(this),
+		clickedID = clicked.attr('data-id'),
+		clickedAttr = clicked.find('p').html();
+		console.log(clickedAttr);
+
+		siblingImg = modal.find('img[data-id="'+clickedID+'"]');
+		var imgHeight = siblingImg[0].height;
+		
+		modalImages.addClass('hidden');
+		
+		if(siblingImg.hasClass('open')) {
+			closeModal(siblingImg);
 			return;
 		}
-		
-		title.html(clicked.attr('alt'));
-		modalImg.attr('src', clickedSrc);
-		modalImg.attr('alt', clickedAlt);
-		modal.addClass('active');
+	
+		modalImages.removeClass('open');
+		siblingImg.addClass('open');
+		console.log(imgHeight);
+		siblingImg.removeClass('hidden');
+		imgDesc.html(clickedAttr);
+		modal.animate({height: imgHeight + 'px'}, 500);
 		
 		//scroll to top of current image
 		view.animate({
 			scrollTop : modal.offset().top
 		}, 1000);
+		
 	});
 	
 	function closeModal() {
-		modal.removeClass('active');
-		modalImg.attr('src', '');
-		modalImg.attr('alt', '');
+		console.log('close');
+		siblingImg.removeClass('open');
+		modal.animate({height: 0}, 500);
+		view.animate({
+			scrollTop : codeSection.offset().top
+		}, 1000);
 	}
 	
 	//move close icon right as width scrolling

@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?l80x8d');
-	src:url('../fonts/icomoon.eot?#iefixl80x8d') format('embedded-opentype'),
-		url('../fonts/icomoon.woff?l80x8d') format('woff'),
-		url('../fonts/icomoon.ttf?l80x8d') format('truetype'),
-		url('../fonts/icomoon.svg?l80x8d#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?wvlann');
+	src:url('../fonts/icomoon.eot?#iefixwvlann') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?wvlann') format('woff'),
+		url('../fonts/icomoon.ttf?wvlann') format('truetype'),
+		url('../fonts/icomoon.svg?wvlann#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,15 +23,6 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-home:before {
-	content: "\e603";
-}
-.icon-phone:before {
-	content: "\e604";
-}
-.icon-envelope:before {
-	content: "\e605";
-}
 .icon-user:before {
 	content: "\e606";
 }
@@ -43,4 +34,16 @@
 }
 .icon-linkedin:before {
 	content: "\e602";
+}
+.icon-phone:before {
+	content: "\e603";
+}
+.icon-mail:before {
+	content: "\e604";
+}
+.icon-user2:before {
+	content: "\e605";
+}
+.icon-house:before {
+	content: "\e607";
 }
