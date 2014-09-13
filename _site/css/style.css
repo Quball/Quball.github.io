@@ -73,7 +73,6 @@ header {
   height: 0;
   bottom: 0;
   left: 0;
-  background: #272E36;
   z-index: 2;
   margin-top: 20px;
   overflow-x: scroll;
@@ -93,7 +92,8 @@ header {
     cursor: pointer;
     color: #fff;
     padding: 8px 14px;
-    font-size: 16px; }
+    font-size: 16px;
+    background: #37424E; }
   .modal p {
     float: left; }
   @media (min-width: 768px) {
@@ -105,7 +105,7 @@ header {
         margin-left: auto;
         margin-right: auto;
         color: #fff;
-        background: #272E36; }
+        background: #37424E; }
       .modal img {
         margin-top: 10px;
         display: block;
@@ -194,4 +194,5 @@ footer {
     margin-top: 15px;
     height: 30px;
     overflow: hidden;
-    cursor: pointer; }
+    cursor: pointer;
+    background: #fff; }
