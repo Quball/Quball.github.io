@@ -181,12 +181,15 @@ header {
 	
 	@media (min-width: 992px) {
 	
-		.close-icon {
-			color: $white;
-		}
-	
 		img {
 			width: 75%;
+		}
+	}
+	
+	@media (min-width: 1200px) {
+		img {
+			width: auto;
+			height: 50%;
 		}
 	}
 }
