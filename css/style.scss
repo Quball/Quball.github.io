@@ -70,6 +70,11 @@ header  {
 			
 			li {
 				display: inline-block;
+				margin-left: 8px;
+				
+				&:first-child {
+					margin-left: -16px;
+				}
 				
 				a {
 					color: #fff;
@@ -79,10 +84,24 @@ header  {
 						color: $textColor;
 						text-decoration: none;
 					}
-				}
-				@media (min-width: 768px) {
-					padding: 0 10px;
 				}	
+			}
+		}
+		
+		@media (min-width: 768px) {
+		
+			h3 {
+				font-size: 30px;
+			}
+			
+			ul {
+				
+				padding-top: 3px;
+							
+				li {
+					padding: 0 10px;
+					font-size: 30px;
+				}
 			}
 		}
 	}

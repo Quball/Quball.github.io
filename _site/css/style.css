@@ -45,16 +45,24 @@ header {
       list-style: none;
       padding-top: 7px; }
       header nav ul li {
-        display: inline-block; }
+        display: inline-block;
+        margin-left: 8px; }
+        header nav ul li:first-child {
+          margin-left: -16px; }
         header nav ul li a {
           color: #fff; }
           header nav ul li a:hover {
             overflow: hidden;
             color: #404040;
             text-decoration: none; }
-        @media (min-width: 768px) {
-          header nav ul li {
-            padding: 0 10px; } }
+    @media (min-width: 768px) {
+      header nav h3 {
+        font-size: 30px; }
+      header nav ul {
+        padding-top: 3px; }
+        header nav ul li {
+          padding: 0 10px;
+          font-size: 30px; } }
 
 .info-section {
   margin-top: 40px; }
