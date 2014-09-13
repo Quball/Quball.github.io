@@ -28,6 +28,7 @@ function imageViewer() {
 		title.html(clicked.attr('alt'));
 		modalImg.attr('src', clickedSrc);
 		modalImg.attr('alt', clickedAlt);
+		console.log(modalImg.width());
 		modal.addClass('active');
 		
 		//scroll to top of current image

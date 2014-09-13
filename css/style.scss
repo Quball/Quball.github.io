@@ -126,7 +126,7 @@ header {
 	height: 0;
 	bottom: 0;
 	left: 0;
-	background: #37424E;
+	background: #272E36;
 	z-index: 2;
 	margin-top: 20px;
 	overflow-x: scroll;
@@ -157,13 +157,36 @@ header {
 	}
 	
 	@media (min-width: 768px) {
+		
 		overflow: auto;
+		background: #A8AEB4;
+		
+		.close-icon {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			color: $white;
+			background: #272E36;
+		}
 		
 		img {
+			margin-top: 10px;
 			display: block;
+			width: 100%;
 		    margin-left: auto;
 		    margin-right: auto;
-		    @include blackBoxShadow(0px, 0px, 20px, 2px, .4);
+		    @include blackBoxShadow(0px, 0px, 20px, 2px, .6);
+		}
+	}
+	
+	@media (min-width: 992px) {
+	
+		.close-icon {
+			color: $white;
+		}
+	
+		img {
+			width: 75%;
 		}
 	}
 }
