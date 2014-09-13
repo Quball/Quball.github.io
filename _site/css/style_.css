@@ -162,14 +162,13 @@ header {
     font-weight: 500; }
   .projects-section h4 {
     margin-bottom: 20px; }
+  .projects-section .expand {
+    cursor: pointer; }
   .projects-section .content-wrapper {
     margin-bottom: 25px; }
     .projects-section .content-wrapper img {
       width: 100%;
-      height: auto;
-      margin-bottom: 15px; }
-    .projects-section .content-wrapper p {
-      padding-top: 15px; }
+      height: auto; }
 
 footer {
   margin-top: 40px;

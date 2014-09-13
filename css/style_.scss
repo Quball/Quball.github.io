@@ -255,17 +255,16 @@ header  {
 		margin-bottom: 20px;
 	}
 	
+	.expand {
+		cursor: pointer;
+	}
+	
 	.content-wrapper {
 		margin-bottom: 25px;
 		
 		img {
 			width: 100%;
 			height: auto;
-			margin-bottom: 15px;
-		}
-		
-		p {
-			padding-top: 15px;
 		}
 	}
 }
