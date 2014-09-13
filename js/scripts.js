@@ -22,7 +22,7 @@ function imageViewer() {
 		console.log(clickedAttr);
 
 		siblingImg = modal.find('img[data-id="'+clickedID+'"]');
-		var imgHeight = siblingImg[0].height;
+		var imgHeight = siblingImg[0].height + 40; //modal header 40px;
 		
 		modalImages.addClass('hidden');
 		
