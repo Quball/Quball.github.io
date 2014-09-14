@@ -6,9 +6,9 @@ layout: default
 	<article class="row h-entry">
 		<div class="col-xs-12">
 			<h2 class="p-name"> {{ post.title }} </h2>
-			<em class="dt-published hidden" datetime=" {{ post.date }} "> 
+			<p class="dt-published hidden" datetime=" {{ post.date }} "> 
 				Published: {{ post.date | date_to_long_string }} 
-			</em>
+			</p>
 			<div class="e-content">
 				{{ post.content }}
 			</div>
