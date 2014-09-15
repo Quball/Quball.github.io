@@ -257,12 +257,11 @@ header  {
 	}
 	
 	h4 {
-		margin-bottom: 20px;
+		margin: 20px 0;
 	}
 	
 	.content-wrapper {
-		margin-bottom: 25px;
-		
+
 		img {
 			width: 100%;
 			height: auto;
@@ -272,6 +271,24 @@ header  {
 		p {
 			padding-top: 15px;
 		}
+	}
+}
+
+.education-section {
+	
+	margin-bottom: 40px;
+	
+	h3 {
+		margin-top: 40px;
+		font-size: 30px;
+		color: $hColor;
+		border-bottom: 1px solid $underlineColor;
+		margin-bottom: 15px;
+		font-weight: 500;
+	}
+	
+	h4 {
+		margin: 10px 0;
 	}
 }
 
