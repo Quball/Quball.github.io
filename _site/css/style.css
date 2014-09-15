@@ -108,7 +108,8 @@ header {
   .img-modal p {
     color: #fff;
     margin-top: 11px; }
-  .img-modal h4 {
+  .img-modal span {
+    display: block;
     text-align: right;
     color: #fff;
     padding: 10px;

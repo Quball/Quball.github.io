@@ -182,11 +182,12 @@ header  {
 		margin-top: 11px;
 	}
 	
-	h4 {
+	span {
+		display: block;
 		text-align: right;
 		color: #fff;
 		padding: 10px;
-		cursor: pointer; 
+		cursor: pointer;
 	}
 	
 	@media (min-width: 991px) {

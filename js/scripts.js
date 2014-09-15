@@ -19,7 +19,6 @@ function imageViewer() {
 		var clicked = $(this),
 		clickedID = clicked.attr('data-id'),
 		clickedAttr = clicked.find('p').html();
-		console.log(clickedAttr);
 
 		siblingImg = modal.find('img[data-id="'+clickedID+'"]');
 		var imgHeight = siblingImg[0].height + 40; //modal header 40px;
@@ -33,7 +32,6 @@ function imageViewer() {
 	
 		modalImages.removeClass('open');
 		siblingImg.addClass('open');
-		console.log(imgHeight);
 		siblingImg.removeClass('hidden');
 		imgDesc.html(clickedAttr);
 		modal.animate({height: imgHeight + 'px'}, 500);
@@ -46,7 +44,6 @@ function imageViewer() {
 	});
 	
 	function closeModal() {
-		console.log('close');
 		siblingImg.removeClass('open');
 		modal.animate({height: 0}, 500);
 		view.animate({
