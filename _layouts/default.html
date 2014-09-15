@@ -1,32 +1,32 @@
-{% include header.html %}
-	<div class="row">
-		<section class="col-xs-12 info-section">
-			{% include info.html %}
+		{% include header.html %}
+		<div class="row">
+			<section class="col-xs-12 info-section">
+				{% include info.html %}
+			</section>
+			<aside class="col-xs-12 aside-section">
+				{% include aside.html %}
+			</aside>
+		</div>
+	</div> <!-- End container -->
+	
+	<article class="code-section">
+		{% include code-examples.html %}
+	</article>
+	
+	<article class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				{{ content }}
+			</div>
+		</div>
+	</article>
+	
+	<article class="projects-section container">
+		<section class="row">
+			<div class="col-xs-12">
+				{% include projects.html %}
+			</div>
 		</section>
-		<aside class="col-xs-12 aside-section">
-			{% include aside.html %}
-		</aside>
-	</div>
+	</article>
 </main>
-
-<section class="code-section">
-	{% include code-examples.html %}
-</section>
-
-<section class="container">
-	<div class="row">
-		<div class="col-xs-12">
-			{{ content }}
-		</div>
-	</div>
-</section>
-
-<section class="projects-section container">
-	<div class="row">
-		<div class="col-xs-12">
-			{% include projects.html %}
-		</div>
-	</div>
-</section>
-
 {% include footer.html %}

@@ -4,7 +4,7 @@ layout: default
 
 {% for post in site.posts limit: 5 %}
 	<article class="row h-entry">
-		<div class="col-xs-12">
+		<section class="col-xs-12">
 			<h2 class="p-name"> {{ post.title }} </h2>
 			<p class="dt-published hidden" datetime=" {{ post.date }} "> 
 				Published: {{ post.date | date_to_long_string }} 
@@ -12,6 +12,6 @@ layout: default
 			<div class="e-content">
 				{{ post.content }}
 			</div>
-		</div>
+		</section>
 	</article>
 {% endfor %}
