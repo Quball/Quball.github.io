@@ -89,15 +89,17 @@ header {
         font-size: 30px;
         color: #31ADA3; }
 
-.aside-section, .h-entry {
+.summary-section, .h-entry {
   margin-top: 40px; }
-  .aside-section h3, .aside-section h2, .h-entry h3, .h-entry h2 {
+  .summary-section p, .h-entry p {
+    margin-bottom: 15px; }
+  .summary-section h3, .summary-section h2, .h-entry h3, .h-entry h2 {
     font-size: 30px;
     color: #336F6A;
     border-bottom: 1px solid #A4D9D5;
     margin-bottom: 15px;
     font-weight: 500; }
-  .aside-section h4, .h-entry h4 {
+  .summary-section h4, .h-entry h4 {
     margin-top: 15px; }
 
 .img-modal {
